@@ -51,7 +51,30 @@
             <p>Além disso, a TRUCK ME simplifica todos os processos relacionados ao frete, desde a contratação até a execução, tornando a experiência de transporte mais rápida, transparente e segura para todas as partes envolvidas.</p>
 
             <p>Na TRUCK ME, acreditamos que a tecnologia pode revolucionar o setor de transporte, e estamos comprometidos em fornecer soluções que otimizem a eficiência e a confiabilidade dos serviços de frete. Seja você um embarcador buscando serviços de transporte de qualidade ou um transportador autônomo em busca de novas oportunidades, a TRUCK ME é a parceira ideal para suas necessidades logísticas.</p>
+
+            <button id="saibaMais">Saiba mais!<i class="fa-solid fa-arrow-down"></i></button>
         </section><!--sobre-->
+    </div>
+
+    <div class="container">
+        <section class="saiba-mais" id="infoSessao">
+            <div class="saiba-mais-text"">
+                <h2>Saiba Mais sobre a TRUCK ME</h2>
+
+                <h4>Nossa Missão</h4>
+                <p>Na TRUCK ME, estamos comprometidos em revolucionar o setor de transporte. Nosso objetivo é fornecer soluções tecnológicas que simplificam e otimizam todos os processos logísticos, desde a contratação até a execução do frete.</p>
+
+                <h4>Plataforma Avançada</h4>
+                <p>Nossa plataforma web é o coração da nossa operação. Com ela, conectamos embarcadores a transportadores autônomos altamente qualificados, garantindo que cada transporte seja realizado de forma eficiente e segura. A plataforma oferece uma interface intuitiva e funcionalidades robustas, permitindo uma gestão completa e transparente de todas as operações de transporte.</p>
+
+                <h4>Conformidade e Confiabilidade</h4>
+                <p>Cumprir todos os requisitos e obrigações de uma transportadora tradicional é uma prioridade para nós. Garantimos que todas as normas e regulamentações sejam rigorosamente seguidas, proporcionando tranquilidade e segurança para nossos clientes e parceiros.</p>
+
+                <h4>Para Quem é a TRUCKME</h4>
+                <p>Se você é um embarcador procurando por serviços de transporte confiáveis e eficientes, ou um transportador autônomo em busca de novas oportunidades, a TRUCK ME é a parceira ideal para suas necessidades logísticas. Nossa tecnologia e expertise estão à sua disposição para garantir que cada transporte seja um sucesso.
+                </p>
+            </div>
+        </section>
     </div>
 
     
@@ -120,7 +143,7 @@
             <h4>Todos os direitos reservados - 2024</h4>
             <h4>Desenvolvido por - Vinicius</h4>
         </div>
-        <img src="./assets/logo_truck_me_frete_plataforma.webp">
+        <img class="logo-footer" src="./assets/logo_truck_me_frete_plataforma.webp">
         
     </footer>
 
@@ -129,6 +152,26 @@
             var menu = document.querySelector('.menu-mobile');
             menu.classList.toggle('show');
         }
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const saibaMaisBtn = document.getElementById('saibaMais');
+    const infoSection = document.getElementById('infoSessao');
+
+    saibaMaisBtn.addEventListener('click', function() {
+        if (infoSection.classList.contains('saiba-mais')) {
+            infoSection.classList.remove('saiba-mais');
+            setTimeout(() => {
+                infoSection.classList.add('show');
+            }, 100); // Pequeno delay para garantir que a classe show seja aplicada após a remoção da hidden
+        } else {
+            infoSection.classList.remove('show');
+            setTimeout(() => {
+                infoSection.classList.add('saiba-mais');
+            }, 500); // Tempo de transição CSS
+        }
+    });
+});
     </script>
 
 
