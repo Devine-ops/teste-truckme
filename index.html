@@ -1,136 +1,258 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
     <title>TruckMe</title>
     <script src="https://kit.fontawesome.com/5e12c0a050.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
 
             <div class="logo">
-                <img src="../assets/logo_truck_me_frete_plataforma.webp">
+                <img src="./assets/logo_truck_me_frete_plataforma.webp">
             </div>
 
             <div class="menu">
-                <ul><li><a href="">Home</a></li></ul>
-                <ul><li><a href="">Sobre</a></li></ul>
-                <ul><li><a href="">Serviços</a></li></ul>
-                <ul><li><a href="">Contato</a></li></ul>
+                <ul>
+                    <li><a href="">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Serviços</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Contato</a></li>
+                </ul>
 
             </div>
 
             <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
             <nav class="menu-mobile">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
 
         </header>
 
     </div><!--container-->
 
     <section class="banner">
-       <h1>Seja bem vindo a TruckMe</h1>
-       <div class="bannerimg"></div>
+        <h1 class="title-banner">Seja bem vindo a TruckMe</h1>
+        <div class="bannerimg"></div>
     </section><!--banner-->
     <div class="container">
         <section class="sobre">
             <h2>Sobre a Truckme</h2>
-            <p>A TRUCK ME é uma empresa inovadora que transforma a maneira como serviços de transporte são gerenciados e realizados. Através da nossa avançada Plataforma Web, garantimos que todos os requisitos e obrigações de uma transportadora tradicional sejam rigorosamente cumpridos, proporcionando um serviço confiável e eficiente.</p>
+            <p>A TRUCK ME é uma empresa inovadora que transforma a maneira como serviços de transporte são gerenciados e
+                realizados. Através da nossa avançada Plataforma Web, garantimos que todos os requisitos e obrigações de
+                uma transportadora tradicional sejam rigorosamente cumpridos, proporcionando um serviço confiável e
+                eficiente.</p>
 
-            <p>Nosso objetivo é conectar embarcadores aos transportadores autônomos mais qualificados, criando um elo forte e eficiente na cadeia de logística. Utilizamos um criterioso processo de gestão para selecionar os melhores profissionais, assegurando que nossos clientes recebam sempre o melhor serviço possível.</p>
+            <p>Nosso objetivo é conectar embarcadores aos transportadores autônomos mais qualificados, criando um elo
+                forte e eficiente na cadeia de logística. Utilizamos um criterioso processo de gestão para selecionar os
+                melhores profissionais, assegurando que nossos clientes recebam sempre o melhor serviço possível.</p>
 
-            <p>Além disso, a TRUCK ME simplifica todos os processos relacionados ao frete, desde a contratação até a execução, tornando a experiência de transporte mais rápida, transparente e segura para todas as partes envolvidas.</p>
+            <p>Além disso, a TRUCK ME simplifica todos os processos relacionados ao frete, desde a contratação até a
+                execução, tornando a experiência de transporte mais rápida, transparente e segura para todas as partes
+                envolvidas.</p>
 
-            <p>Na TRUCK ME, acreditamos que a tecnologia pode revolucionar o setor de transporte, e estamos comprometidos em fornecer soluções que otimizem a eficiência e a confiabilidade dos serviços de frete. Seja você um embarcador buscando serviços de transporte de qualidade ou um transportador autônomo em busca de novas oportunidades, a TRUCK ME é a parceira ideal para suas necessidades logísticas.</p>
+            <p>Na TRUCK ME, acreditamos que a tecnologia pode revolucionar o setor de transporte, e estamos
+                comprometidos em fornecer soluções que otimizem a eficiência e a confiabilidade dos serviços de frete.
+                Seja você um embarcador buscando serviços de transporte de qualidade ou um transportador autônomo em
+                busca de novas oportunidades, a TRUCK ME é a parceira ideal para suas necessidades logísticas.</p>
+
+            <button class="saiba" id="saibaMais">Saiba mais!<i class="fa-solid fa-arrow-down"></i></button>
         </section><!--sobre-->
     </div>
 
-    
-    <section class="nossos-servicos">
-        <h2>Nossos Serviços</h2>    
-            <div class="container-servicos">
-                <div class="single">
-                    <h3>Frete Expresso</h3>
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <p>Serviço de transporte rápido e eficiente para entregas urgentes, garantindo que sua carga chegue ao destino no menor tempo possível.</p>
-                    <h2>R$ 500,00</h2>
-                </div>
-
-                <div class="single">
-                    <h3>Frete fracionado</h3>
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <p>Transporte de pequenas quantidades de mercadorias, otimizando custos ao compartilhar o espaço de carga com outros clientes.</p>
-                    <h2>R$ 150,00</h2>
-                </div>
-
-                <div class="single">
-                    <h3>Frete Refrigerado</h3>
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <p>Transporte de mercadorias que necessitam de controle de temperatura, garantindo a integridade dos produtos perecíveis durante o trajeto.</p>
-                    <h2>R$ 600,00</h2>
-                </div>
-
-                <div class="single">
-                    <h3>Frete Ecônomico</h3>
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <p>Solução de transporte econômica para cargas menos urgentes, mantendo a qualidade e segurança do serviço.</p>
-                    <h2>R$ 250,00</h2>
-                </div>
-
-                <div class="single">
-                    <h3>Frete Carga Pesada</h3>
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <p>Serviço especializado para o transporte de cargas pesadas e volumosas, com equipamentos adequados e motoristas experientes.</p>
-                    <h2>R$ 1000,00</h2>
-                </div>
-
-                <div class="single">
-                    <h3>Frete Internacional</h3>
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <p>Serviço de transporte para cargas destinadas a outros países, cuidando de toda a documentação e regulamentação necessária para exportação.</p>
-                    <h2>R$ 2000,00</h2>
-                </div>
-            </div>
-    </section><!--nossos serviços-->
-
     <div class="container">
-        <h2>Entre em Contato</h2>
-        <div class="formulario">
-        
-            <form action="submit">
-                <input type="text" placeholder="Nome completo">
-                <input type="email" placeholder="E-mail">
-                <textarea placeholder="Deixa sua mensagem!"></textarea>
-                <button>Enviar!</button>
-            </form>
-        </div>
+        <section class="saiba-mais" id="infoSessao">
+            <div class="saiba-mais-text"">
+                <h2>Saiba Mais sobre a TRUCK ME</h2>
+
+                <h4>Nossa Missão</h4>
+                <p>Na TRUCK ME, estamos comprometidos em revolucionar o setor de transporte. Nosso objetivo é fornecer soluções tecnológicas que simplificam e otimizam todos os processos logísticos, desde a contratação até a execução do frete.</p>
+
+                <h4>Plataforma Avançada</h4>
+                <p>Nossa plataforma web é o coração da nossa operação. Com ela, conectamos embarcadores a transportadores autônomos altamente qualificados, garantindo que cada transporte seja realizado de forma eficiente e segura. A plataforma oferece uma interface intuitiva e funcionalidades robustas, permitindo uma gestão completa e transparente de todas as operações de transporte.</p>
+
+                <h4>Conformidade e Confiabilidade</h4>
+                <p>Cumprir todos os requisitos e obrigações de uma transportadora tradicional é uma prioridade para nós. Garantimos que todas as normas e regulamentações sejam rigorosamente seguidas, proporcionando tranquilidade e segurança para nossos clientes e parceiros.</p>
+
+                <h4>Para Quem é a TRUCKME</h4>
+                <p>Se você é um embarcador procurando por serviços de transporte confiáveis e eficientes, ou um transportador autônomo em busca de novas oportunidades, a TRUCK ME é a parceira ideal para suas necessidades logísticas. Nossa tecnologia e expertise estão à sua disposição para garantir que cada transporte seja um sucesso.
+                </p>
+            </div>
+        </section>
     </div>
 
-    <footer>
-        <div class="infos">
-            <h4>Todos os direitos reservados - 2024</h4>
-            <h4>Desenvolvido por - Vinicius</h4>
-        </div>
-        <img src="../assets/logo_truck_me_frete_plataforma.webp">
-        
-    </footer>
+    
+    <section class=" nossos-servicos">
+                <h2>Nossos Serviços</h2>
+                <div class="container-servicos">
+                    <div class="single">
+                        <h3>Frete Expresso</h3>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <p>Serviço de transporte rápido e eficiente para entregas urgentes, garantindo que sua carga
+                            chegue ao destino no menor tempo possível.</p>
+                        <h2>R$ 500,00</h2>
+                    </div>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.querySelector('.menu-mobile');
-            menu.classList.toggle('show');
-        }
-    </script>
+                    <div class="single">
+                        <h3>Frete fracionado</h3>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <p>Transporte de pequenas quantidades de mercadorias, otimizando custos ao compartilhar o espaço
+                            de carga com outros clientes.</p>
+                        <h2>R$ 150,00</h2>
+                    </div>
+
+                    <div class="single">
+                        <h3>Frete Refrigerado</h3>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <p>Transporte de mercadorias que necessitam de controle de temperatura, garantindo a integridade
+                            dos produtos perecíveis durante o trajeto.</p>
+                        <h2>R$ 600,00</h2>
+                    </div>
+
+                    <div class="single">
+                        <h3>Frete Ecônomico</h3>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <p>Solução de transporte econômica para cargas menos urgentes, mantendo a qualidade e segurança
+                            do serviço.</p>
+                        <h2>R$ 250,00</h2>
+                    </div>
+
+                    <div class="single">
+                        <h3>Frete Carga Pesada</h3>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <p>Serviço especializado para o transporte de cargas pesadas e volumosas, com equipamentos
+                            adequados e motoristas experientes.</p>
+                        <h2>R$ 1000,00</h2>
+                    </div>
+
+                    <div class="single">
+                        <h3>Frete Internacional</h3>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <p>Serviço de transporte para cargas destinadas a outros países, cuidando de toda a documentação
+                            e regulamentação necessária para exportação.</p>
+                        <h2>R$ 2000,00</h2>
+                    </div>
+                </div>
+        </section><!--nossos serviços-->
+
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="formulario">
+
+                <form id="meuForm">
+                    <input class="name" type="text" placeholder="Nome completo" required>
+                    <input class="email" type="email" placeholder="E-mail" required>
+                    <textarea class="mensagem" placeholder="Deixa sua mensagem!" required></textarea>
+                    <button type="submit" class="envia">Enviar!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="embrulho">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/banner.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/caminhao-europeu-transporta-carg.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/uma-linha-de-caminhoes-volvo-na.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="infos">
+                <h4>Todos os direitos reservados - 2024</h4>
+                <h4>Desenvolvido por - Vinicius</h4>
+            </div>
+            <img class="logo-footer" src="./assets/logo_truck_me_frete_plataforma.webp">
+
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu-mobile');
+                menu.classList.toggle('show');
+            }
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const saibaMaisBtn = document.getElementById('saibaMais');
+                const infoSection = document.getElementById('infoSessao');
+
+                saibaMaisBtn.addEventListener('click', function () {
+                    if (infoSection.classList.contains('saiba-mais')) {
+                        infoSection.classList.remove('saiba-mais');
+                        setTimeout(() => {
+                            infoSection.classList.add('show');
+                        }, 100); 
+                    } else {
+                        infoSection.classList.remove('show');
+                        setTimeout(() => {
+                            infoSection.classList.add('saiba-mais');
+                        }, 500); 
+                    }
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('meuForm');
+            const button = form.querySelector('.envia');
+
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); 
+
+                const name = form.querySelector('.name').value;
+                const email = form.querySelector('.email').value;
+                const mensagem = form.querySelector('.mensagem').value;
+
+                if (name && email && mensagem) {
+                    alert('Formulário enviado com sucesso!');
+                }
+            });
+        });
+
+        </script>
 
 
 </body>
+
 </html>
